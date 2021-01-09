@@ -16,6 +16,6 @@ console.log(circumference)
 //kör területe no2-ből
 let area =no2**2*3.14
 //pitagorasz tétele alapján kiszámolni no3-t
-let no3 = no1**2+no2**2
+let no3 = Math.sqrt(no1**2+no2**2)
 console.log(no3)
 
