@@ -34,7 +34,7 @@ let city=window.prompt("Melyik városban laksz?");
 let job=window.prompt("Mi a foglalkozásod?");
 let result= "Te egy " + job + " " + "leszel" + " " + city + "-ban/ben, és" + " " + partner + " " + "lesz a párod, születni fog" + " " + kids + " " + "gyereketek.";
 console.log(result);
-alert(result);*/
+alert(result); */
 
 
 
