@@ -13,28 +13,46 @@ d) ami kiírja 100-ig a páratlan számokat! */
 }*/
 
 //páratlan számok
-for (let number = 1; number <= 100; number++) {
+/*for (let number = 1; number <= 100; number++) {
     if (number % 2) {
         console.log(number);
     }
-}
+}*/
 //páros számok
-for (let num = 1; num <= 100; num++) {
+/*for (let num = 1; num <= 100; num++) {
     if (num % 2 === 0) {
         console.log(num)
     }
-}
+}*/
 
 
 
 /*2. Írj egy ciklust,
     Ami kiírja 100-ig a prím számokat (prím szám: csak 1-el és önmagával osztható, pl,: 1,2, 5.).*/
+// MIÉRT
 
+/*for (let counter = 0; counter <= 100; counter++) {
+
+    let notPrime = false;
+    for (let i = 2; i <= counter; i++) {
+        if (counter%i===0 && i!==counter) {
+            notPrime = true;
+        }
+    }
+    if (notPrime === false) {
+        console.log(counter);
+    }
+}*/
+//nem tudom hogy kell
 
 
 
 
 //3. Írj egy rpgramot ,ami összeadja 1-tól 10-ig a számokat! (pl. result = 1+2+3+...+10)
+
+
+}
+
 /*4. Írj egy programot, ami kiírja a 10X10-es szorzótáblát.
 1x1 = 1;
 1x2 = 2;

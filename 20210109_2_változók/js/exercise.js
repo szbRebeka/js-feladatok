@@ -74,6 +74,7 @@ let celsiusAdd = Number.parseInt(window.prompt("Hőmérséklet megadása Celsius
 let fahrenheit = celsiusAdd * 1.8000 + 32.00;
 console.log(celsiusAdd+"°C" + "=" + fahrenheit+"°F");
 
+
 let fahrenheitAdd = Number.parseInt(window.prompt("Hőmérséklet megadása Fahrenheitben:"));
 let celsius = (fahrenheitAdd - 32.00) / 1.8000;
 console.log(fahrenheitAdd+"°F" + "=" +  celsius+"°C");
