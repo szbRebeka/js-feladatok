@@ -46,7 +46,7 @@ console.log("10", arr)
 
 myArray = [2,5,1,3,7,9,8,6,4,12]
 
-function searchArray(arr, obj) {
+/*function searchArray(arr, obj) {
     arr = myArray
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === obj) {
@@ -56,13 +56,13 @@ function searchArray(arr, obj) {
         }
     }
 }
-searchArray([myArray], 43);
+searchArray([myArray], 43); */
 
 //.írj egy függvényt "doubleArray" néven, ami megkap paraméterként egy tömböt és a tömb minden szám elemének értékét megnöveli a kétszeresére és kiírja a konzolra!
 //  - Nem szám esetén átugrik a következő iterációra!
 //  - A végén visszatér a módosított tömbbel!
 
-function doubleArray(arr) {
+/*function doubleArray(arr) {
     let doubled = []
     for (let i = 0; i < arr.length; i++) {
         let dubMovement = arr[i] * 2;
@@ -70,7 +70,7 @@ function doubleArray(arr) {
         }
     return doubled
 }
-console.log(doubleArray(myArray))
+console.log(doubleArray(myArray)) */
 
 /*írj egy függvényt, ami megkap paraméterként egy tömböt és kiszámolja a tömb elemeinek
 összegét (függvény neve sum),
@@ -79,7 +79,7 @@ minimumát (név: min)
 maximumát (név: max),
 és a végén visszatéríti a kiszámolt értékét*/
 
-function calculator(arr) {
+/*function calculator(arr) {
    let sum = 0;
    for (let i = 0; i < arr.length; i++) {
        sum = sum + arr[i];
@@ -87,3 +87,45 @@ function calculator(arr) {
    return sum;
 }
 console.log(calculator(myArray))
+*/
+/*function average (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    let avg = sum / arr.length;
+    return avg;
+}
+console.log(average(myArray))  */
+
+
+//MIÉRT NEM JÓ??
+/*function minimum() {
+    let min = 0;
+   for (let i = 0; i < myArray.length, i++;) {
+       min = Math.min.apply(myArray);
+    }
+}
+console.log(minimum()) */
+
+let numbers = [10, 3, 6, 2, 7, 43, 5, 4, 9]
+function minimum () {
+  return Math.min(...numbers)
+}
+minimum(numbers)
+
+/*
+4.
+hozz létre két számokkal teli tömböt! A tömbök mérete: 10.
+írj egy "isMatchinArrays" nevű függvényt, ami megkap két tömböt és megnézi, hogy van-e a két tömbben egyező érték!
+	Ha van egyezés: azonnal leáll és visszatér egy "true" logikai értékkel
+	Ha nincs: visszatér egy logikai "false" érétkkel.
+
+4b) Bónusz feladat: írj egy olyan verziót, ami kikeresi az összes egyezést egy új tömbbe, és eredményként az egyezéseket tartalmazó tömbböt adja vissza.
+Ha nincs egyezés, akkor egy üres tömböt add vissza.
+
+	Tipp: elemeket tömbbe így lehet beletenni:
+		let array = []; // üres tömb létrehozása és mentése változóba
+		array.push("alma") // eredmény:  ["alma"]
+		array.push("körte") // eredmény:  ["alma", körte"]
+ */
