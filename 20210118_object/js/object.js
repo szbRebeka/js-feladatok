@@ -59,7 +59,7 @@ function getLengthOfObject () {
 }
 getLengthOfObject(threePiece)
 
-/* CSAK A BOOLEANT ÍRjA KI,
+/* CSAK A BOOLEANT ÍRjA KI, ???????????????????,
 4.
 Property értékének kiíratása
 Írj egy függvényt, amely paraméterként megkapja az library tömböt és kiírja a konzolra a minden könyv readingStatus értékét.
@@ -125,13 +125,17 @@ function isThisReal(obj) {
         console.log(false)
     }
 }
-isThisReal(`is that a string?`)
+isThisReal(`is this a string?`)
 
 /*Létezik-e?++
 Írj egy függvényt, amelynek két paramétere van: egy object és bármilyen primitív adattípus. Az függvény ellenőrzni, hogy az object bármely property-je rendelkezik a megadott értékkel vagy sem. Visszatérési értéke egy boolean.
 */
 
-/* törlés property alapján
+
+
+
+/* ???????????????????
+ törlés property alapján
 Írj egy függvényt, ami két paramétert kap: egy objectet, és egy sztringet. A függvény pedig törli a sztringgel egyező property-t az objectből, majd visszatér az új object-tel.
 Input
 {1: "a", 2: "b", 3: "c"}, "2"
@@ -141,4 +145,17 @@ function deleteByProperty (obj, prop) {
     // ide írhatod a kódodat
 }
 */
+/*let firstObject = {
+    1: `a`,
+    2: `b`,
+    3: `c`
+}
+let firstString = `2` */
 
+function deleteByProperty (obj, prop) {
+    let newObj = []
+    let deleteProp = prop;
+    delete obj[deleteProp];
+    return newObj.push(obj)
+}
+deleteByProperty({1:`a`, 2:`b`, 3:`c`},`2`)

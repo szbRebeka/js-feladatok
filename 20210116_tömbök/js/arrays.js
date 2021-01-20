@@ -99,20 +99,40 @@ console.log(calculator(myArray))
 console.log(average(myArray))  */
 
 
-//MIÉRT NEM JÓ??
-/*function minimum() {
-    let min = 0;
-   for (let i = 0; i < myArray.length, i++;) {
-       min = Math.min.apply(myArray);
-    }
-}
-console.log(minimum()) */
-
 let numbers = [10, 3, 6, 2, 7, 43, 5, 4, 9]
-function minimum () {
-  return Math.min(...numbers)
+
+function min (arr) {
+  //let minIndex = 0;
+  let minValue = arr[1]
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < minValue) {
+      minValue = arr[i];
+     // minIndex = i;
+    }
+  }
+  return {
+   // minIndex
+    minValue
+  };
 }
-minimum(numbers)
+console.log(min(numbers))
+
+function max(arr) {
+  let maxValue = arr[1]
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > maxValue) {
+      maxValue = arr[i];
+    }
+  }
+  return {
+    maxValue
+  };
+}
+console.log(max(numbers))
+
+
+
+
 
 /*
 4.
